@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Permanent+Marker&display=swap');
+
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: .1rem solid rgba(255, 255, 255, .3);
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body {
+    background: url(../img/wallpaper4.jpg);
+    background-size: cover;
+}
+
+
+.header {
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--bg);
+}
+
+.product .product-btn,
+.product2 .product-btn {
+    margin-bottom: 2px;
+    /* Zorgt ervoor dat de buttons altijd onderaan worden geplaatst */
+}
+
+.header .logo img {
+    height: 9rem;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 2rem;
+    color: gray;
+    text-transform: none;
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+/*header bars*/
+/*icons*/
+.header .icons div {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+/*icons*/
+.header .icons div:hover {
+    color: var(--main-color);
+}
+
+#menu-btn {
+    display: none;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 6rem;
+    margin-top: 25rem;
+    /* Aangepaste ondermarge */
+    color: white;
+}
+
+.all-products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0rem;
+    margin-bottom: 5rem;
+}
+
+.product {
+    overflow: hidden;
+    background: url(../img/interior2.jpg);
+    background-size: cover;
+    color: #21201e;
+    text-align: center;
+    width: 260px;
+    height: 400px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    margin: 20rem 10rem;
+    /* Aangepaste marge aan de boven- en onderkant */
+}
+
+.product2 {
+    overflow: hidden;
+    background: url(../img/interior.jpg);
+    background-size: cover;
+    color: #21201e;
+    text-align: center;
+    width: 260px;
+    height: 400px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    margin: 20rem 10rem;
+    /* Aangepaste marge aan de boven- en onderkant */
+}
+
+.product3 {
+    overflow: hidden;
+    background: url(../img/interior2.jpg);
+    background-size: cover;
+    color: #21201e;
+    text-align: center;
+    width: 260px;
+    height: 400px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    margin: 20rem 10rem;
+    /* Aangepaste marge aan de boven- en onderkant */
+}
+
+
+
+.product .product-title,
+.product .product-price,
+.product2 .product-title,
+.product2 .product2-price,
+.product3 .product-title,
+.product3 .product3-price {
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+    margin-top: 1.2rem;
+}
+
+.product:hover img,
+.product2:hover img,
+.product3:hover img {
+    scale: 1.1;
+}
+
+.product:hover,
+.product2:hover,
+.product3:hover {
+    box-shadow: 5px 15px 25px #eeeeee;
+}
+
+
+.product a:link,
+.product a:visited,
+.product2 a:link,
+.product2 a:visited,
+.product3 a:link,
+.product3 a:visited {
+    color: #eee;
+    border: 1px solid white;
+    display: inline-block;
+    text-decoration: none;
+    background-color: black;
+    padding: 1.3rem 1rem;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.product .product-description,
+.product2 .product2-description,
+.product3 .product3-description {
+    font-size: 1.5rem;
+    color: #eee;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    font-weight: bold;
+    text-transform: none;
+    backdrop-filter: blur(5px);
+    /* Vervagingseffect toevoegen */
+
+}
+
+
+.product a:hover,
+.product2 a:hover,
+.product3 a:hover {
+    transform: scale(1.1);
+}
+
+/* ===== FOOTER =====*/
+.footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-weight: var(--font-semi);
+    padding: 2rem 0;
+    border-top: 1px solid white;
+}
+
+.footer__social {
+    margin-bottom: var(--mb-4);
+}
+
+.footer__icon {
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0 var(--mb-2);
+    padding: 1rem;
+}
+
+.footer__icon:hover {
+    color: gray;
+}
+
+.footer__copy {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 370px) {
+    h1 {
+        margin-top: 20rem;
+        /* Aangepaste ondermarge */
+    }
+
+    .product,
+    .product2,
+    .product3 {
+        margin: 5rem;
+        /* Marge aanpassen om ruimte tussen de producten te creëren */
+        flex-basis: 85%;
+        /* Elk product neemt de volledige breedte in op kleinere schermen */
+    }
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active {
+        right: 0;
+    }
+
+    .header .navbar a {
+        color: var(--black);
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+    body {
+        background: url(../img/wallpaper4.jpg);
+        background-size: center;
+    }
+
+    .product .product-description,
+    .product2 .product2-description,
+    .product3 .product3-description {
+        font-size: 1rem;
+        color: #eee;
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+        font-weight: bold;
+        text-transform: none;
+        backdrop-filter: blur(5px);
+        /* Vervagingseffect toevoegen */
+    }
+}
+
+@media (max-width: 450px) {
+    h1 {
+        margin-top: 20rem;
+        /* Aangepaste ondermarge */
+    }
+
+    .product,
+    .product2,
+    .product3 {
+        margin: 5rem;
+        /* Marge aanpassen om ruimte tussen de producten te creëren */
+        flex-basis: 85%;
+        /* Elk product neemt de volledige breedte in op kleinere schermen */
+    }
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active {
+        right: 0;
+    }
+
+    .header .navbar a {
+        color: var(--black);
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+    body {
+        background: url(../img/wallpaper4.jpg);
+        background-size: center;
+    }
+
+    .product .product-description,
+    .product2 .product2-description,
+    .product3 .product3-description {
+        font-size: 1.1rem;
+        color: #eee;
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+        font-weight: bold;
+        text-transform: none;
+        backdrop-filter: blur(5px);
+        /* Vervagingseffect toevoegen */
+
+    }
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        margin-top: 20rem;
+        /* Aangepaste ondermarge */
+    }
+
+    .product,
+    .product2,
+    .product3 {
+        margin: 5rem;
+        /* Marge aanpassen om ruimte tussen de producten te creëren */
+        flex-basis: 65%;
+        /* Elk product neemt de volledige breedte in op kleinere schermen */
+    }
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active {
+        right: 0;
+    }
+
+    .header .navbar a {
+        color: var(--black);
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+    body {
+        background: url(../img/wallpaper4.jpg);
+        background-size: center;
+    }
+}
+
+@media (max-width: 911px) {
+    h1 {
+        margin-top: 20rem;
+        /* Aangepaste ondermarge */
+    }
+
+    .product,
+    .product2,
+    .product3 {
+        margin: 5rem;
+        /* Marge aanpassen om ruimte tussen de producten te creëren */
+        flex-basis: 50%;
+        /* Elk product neemt de volledige breedte in op kleinere schermen */
+    }
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active {
+        right: 0;
+    }
+
+    .header .navbar a {
+        color: var(--black);
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+    body {
+        background: url(../img/wallpaper4.jpg);
+        background-size: center;
+    }
+
+
+}
